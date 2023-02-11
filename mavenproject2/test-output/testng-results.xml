@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-12T03:52:36 IST" name="Default suite" finished-at="2023-02-12T03:53:09 IST" duration-ms="33142">
+    <groups>
+    </groups>
+    <test started-at="2023-02-12T03:52:36 IST" name="Default test" finished-at="2023-02-12T03:53:09 IST" duration-ms="33142">
+      <class name="maven.mavenproject2.PopupAlert">
+        <test-method signature="f()[pri:0, instance:maven.mavenproject2.PopupAlert@4803b726]" started-at="2023-02-12T03:52:36 IST" name="f" finished-at="2023-02-12T03:53:09 IST" duration-ms="32862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- maven.mavenproject2.PopupAlert -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
