@@ -43,11 +43,11 @@ public class DemoQAForm {
 		
 		WebElement dob = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[starts-with(@id,'dateOfBirthInput')]")));
 		dob.click();
-		
-		
+				
 		WebElement month = driver.findElement(By.className("react-datepicker__month-select"));
 		Select select = new Select(month);
 		select.selectByIndex(1);
+		
 		WebElement monthName = select.getFirstSelectedOption();
 		String na = monthName.getText();
 		System.out.println(na);
@@ -61,7 +61,7 @@ public class DemoQAForm {
 			 
 		WebElement subject = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[starts-with(@class,'subjects-auto-complete__input')]/input")));
 		subject.sendKeys("computer science");
-		WebElement subjectClick = driver.findElement(By.xpath("//div[text()='Computer Science']"));
+		WebElement subjectClick = driver.findElement(By.xpath("//div[text()='Computer Science']"));  //auto suggestion - should blur off in event listener
 		subjectClick.click();
 //		
 		WebElement hobbies = driver.findElement(By.xpath("//input[@id='hobbies-checkbox-1']/following-sibling::label[text()='Sports']"));
@@ -90,7 +90,8 @@ public class DemoQAForm {
 		 * 
 		 */		
 		WebElement submit = driver.findElement(By.xpath("//button[text()='Submit']"));
-		submit.click();
+		wait.until(ExpectedConditions.elementToBeClickable(submit)).click();
+		
 	
 		boolean button = submit.isEnabled();
 		boolean buttonDisplay = submit.isDisplayed();
