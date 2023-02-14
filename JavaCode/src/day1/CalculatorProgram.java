@@ -7,7 +7,7 @@ public class CalculatorProgram {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		try (Scanner scanner = new Scanner(System.in)) {
+		Scanner scanner = new Scanner(System.in); 
 			System.out.println("enter first number");
 			int firstNumber = scanner.nextInt();
 			
@@ -25,7 +25,7 @@ public class CalculatorProgram {
 			
 			int division = firstNumber / secondNumber;
 			System.out.println("division value is " + division);
-		}
+		
  	}
 
 }
