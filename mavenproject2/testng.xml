@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testNG.PriorityKeywordAndSkipTestCase"/>
-      <class name="testNG.browserLaunchTime"/>
-      <class name="testNG.Depends"/>
+      <class name="testngclass.mavenproject2.BrowserLaunchTime"/>
+      <class name="testngclass.mavenproject2.Depends"/>
+      <class name="testngclass.mavenproject2.PriorityKeywordAndSkipTestCase"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
