@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="maven.mavenproject2.PopupAlert">
+      <class name="testngclass.mavenproject2.AssertionDemo">
         <methods>
-          <include name="f"/>
+          <include name="method"/>
         </methods>
-      </class> <!-- maven.mavenproject2.PopupAlert -->
+      </class> <!-- testngclass.mavenproject2.AssertionDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

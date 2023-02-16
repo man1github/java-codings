@@ -15,7 +15,7 @@ public class BrowserLaunchTime {
   @BeforeSuite
   public void startBrowser() {
 	  
-	  System.setProperty("webdriver.chrome.driver", "C:\\Users\\harichaser\\Downloads\\chromedriver_win32 (2)\\chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver_win32 (2)\\chromedriver.exe");
 	  driver = new ChromeDriver();
 	  start = System.currentTimeMillis();
   }
