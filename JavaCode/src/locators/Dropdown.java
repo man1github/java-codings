@@ -1,13 +1,9 @@
 package locators;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Dropdown {
 
@@ -50,22 +46,22 @@ public class Dropdown {
 		WebElement tamil = driver.findElement(By.xpath("//*[@data-label='Tamil']"));	
 		tamil.click();
 		
-//		WebElement two = driver.findElement(By.xpath("//label[@id='j_idt87:value_label']")) ;
-//		two.click();
+//		for(int i=0; i<=2;i++){
+//			  try{
+//			     driver.findElement(By.xpath("//label[@id='j_idt87:value_label']")).click();
+//			     break;
+//			  }
+//			  catch(Exception e){
+//				  System.out.println(e.getMessage());
+//			  }
+//		}
 		
-		for(int i=0; i<=2;i++){
-			  try{
-			     driver.findElement(By.xpath("//label[@id='j_idt87:value_label']")).click();
-			     break;
-			  }
-			  catch(Exception e){
-				  System.out.println(e.getMessage());
-			  }
-		}
-			
+		WebElement twoselectoption = driver.findElement(By.xpath("//label[@id='j_idt87:value_label']"));
+		twoselectoption.click();
 		
 		WebElement twoselect = driver.findElement(By.xpath("//*[@id='j_idt87:value_1']"));	
 		twoselect.click();
+		
 	}
 
 }
