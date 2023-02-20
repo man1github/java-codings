@@ -20,6 +20,8 @@ public class Loopdemo6 {
 			System.out.println("descending order " + k);
 			k--;
 		} while (k >= 50);
+		
+		
 	}
 
 }

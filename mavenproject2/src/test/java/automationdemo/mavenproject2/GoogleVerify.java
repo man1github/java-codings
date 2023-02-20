@@ -6,14 +6,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class GoogleVerify {
 	
-	
-
   @Test
   public void google() {
 	  
-	  System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver_win32 (2)\\chromedriver.exe");
+	 // System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver_win32 (2)\\chromedriver.exe");
+	  WebDriverManager.chromedriver().setup(); 
 	  WebDriver driver = new ChromeDriver();
 	  driver.manage().window().maximize();
 	  driver.get("https://www.google.com");
@@ -22,7 +23,7 @@ public class GoogleVerify {
 	  
 	  String  at = driver.getTitle();
 	  
-	  boolean title = et.equals(at);               //confirm the title name
+	  boolean title = et.equals(at);             //confirm the title name
 	  System.out.println(title);
 	  
 	  WebElement searchBox = driver.findElement(By.name("q"));

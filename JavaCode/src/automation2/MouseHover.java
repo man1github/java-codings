@@ -18,7 +18,7 @@ public class MouseHover {
 		
 		WebElement developers = driver.findElement(By.xpath("//span[@class='nav_item_name']"));
 		Actions actions =  new Actions(driver);
-		actions.moveToElement(developers).perform();
+		actions.moveToElement(developers).build().perform();
 		
 		WebElement Documentation = driver.findElement(By.xpath("//a[text()='Documentation']"));
 		Documentation.click();

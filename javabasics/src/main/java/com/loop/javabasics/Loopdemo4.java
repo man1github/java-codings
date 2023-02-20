@@ -1,5 +1,7 @@
 package com.loop.javabasics;
 
+import java.util.Iterator;
+
 public class Loopdemo4 {
 
 	public static void main(String[] args) {
@@ -17,6 +19,16 @@ public class Loopdemo4 {
 		// Descending order 55 to 50
 		for (int l = 55; l >= 50; l--) {
 			System.out.println("descending order " + l);
+		}
+		
+		// print only "uar" using string
+		
+		String name = "ramu";
+		for (int i = name.length()-1; i >= 0; i--) {
+			if(i == 2) {
+				continue;
+			}
+			System.out.print(name.charAt(i));
 		}
 
 	}
