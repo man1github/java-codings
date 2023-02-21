@@ -1,18 +1,19 @@
 package org.testleaf.browser;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class AlertPage {
 	
-	public WebElement clickBrowserElement(WebDriver driver) {
-		return driver.findElement(By.xpath("//ul[@id='menuform:j_idt37']/li[@id='menuform:j_idt39']"));
-	}
+	@FindBy(xpath = "//ul[@id='menuform:j_idt37']/li[@id='menuform:j_idt39']")
+	public static WebElement clickBrowserElement;
 	
-	public WebElement clickAlertElement(WebDriver driver) {
-		return driver.findElement(By.xpath("//li[@id='menuform:m_frame']/preceding-sibling::li[@id='menuform:m_overlay']"));
-	}
+	@FindBy(xpath = "//li[@id='menuform:m_frame']/preceding-sibling::li[@id='menuform:m_overlay']")
+	public static WebElement clickAlertElement;
 	
-
+	@FindBy(xpath = "//butto[@id='j_idt88:j_idt91']")
+	public static WebElement clickAlertSimpleDialog;
+	
+	@FindBy(xpath = "//button[@id='j_idt88:j_idt93']")
+	public static WebElement clickAlertConfirmDialog;
 }
