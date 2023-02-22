@@ -12,8 +12,8 @@ public class TC003Alert extends CommonActions{
 	  AlertPage.clickAlertElement(driver).click();	  
   }
   
-  @Test
-  public void alertType() {
+  
+  public void alertType2() {
 	  
 	  clickAlertPage();
 	  
@@ -24,7 +24,29 @@ public class TC003Alert extends CommonActions{
 	  String actual = driver.switchTo().alert().getText();
 	  Assert.assertEquals(actual, "Did you call me?");
 	  driver.switchTo().alert().accept();
+	  
+	  AlertPage.clickSweetAlertbutton(driver).click();
+	  AlertPage.clickDismissbutton(driver).click();
+	  
+	  AlertPage.clickSweetModalDialog(driver).click();
+	  AlertPage.closeAlertSweetModalDialog(driver).click();
+	  
+	  AlertPage.clickAlertPromptDialog(driver).click();
+      String myName = properties.getProperty("name");  // value doesn't send to alert
+	  driver.switchTo().alert().sendKeys(myName);  
 	 
 	}
-  
+  @Test
+  public void name() {
+	  clickAlertPage();
+	  
+	  AlertPage.clickSweetAlertConfirmation(driver).click();
+	  AlertPage.clickConfirmationAlert(driver).click();
+	  
+	  AlertPage.clickAlertMinAndMax(driver).click();
+	  AlertPage.clickAlertMax(driver).click();
+	  AlertPage.clickAlertMin(driver).click();	 
+
+	
+    }
 }

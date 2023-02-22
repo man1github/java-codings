@@ -7,6 +7,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -14,7 +15,7 @@ public class CommonActions {
 	
 	public static WebDriver driver = null;
 	public static Properties properties = null;
-	
+
 	public Properties loadPropertyFile() throws IOException {
 		
 		FileInputStream fileinputstream = new FileInputStream("config.properties");
