@@ -3,17 +3,16 @@ package org.testleaf.Test;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
-
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testleaf.browser.WindowPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.github.dockerjava.api.model.Driver;
 import com.testleaf.commonActions.CommonActions;
 
-public class TC005Window extends CommonActions {
-
+public class TC005Window  extends CommonActions{
+		
 	@Test
 	public void clickWindowElement() {
 
@@ -83,7 +82,9 @@ public class TC005Window extends CommonActions {
 	public void windowType4() {
 
 		WindowPage.clickOpenDelayButton(driver).click();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // how to wait until tab opens
 	//	wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(2));
 	}
+	
+	
 }

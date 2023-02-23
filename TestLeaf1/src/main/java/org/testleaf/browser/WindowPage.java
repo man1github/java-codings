@@ -1,6 +1,5 @@
 package org.testleaf.browser;
 
-import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

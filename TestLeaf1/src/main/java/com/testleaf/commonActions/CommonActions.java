@@ -34,7 +34,7 @@ public class CommonActions {
 		System.setProperty("webdriver.chrome.driver", location);		//incase if i use firefox use if condition after this line
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.navigate().to(url);
+		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}	
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test" verbose="2">
+		<classes>
+			<class name="org.testleaf.Test.TC001HomePage" />
+			<class name="org.testleaf.Test.TC002Auth" />
+			<class name="org.testleaf.Test.TC003Alert" />
+			<class name="org.testleaf.Test.TC004Iframe" />
+			<class name="org.testleaf.Test.TC005Window" />
+			<class name="org.testleaf.Test.TC006Drag" />
+			<class name="org.testleaf.Test.TC007Textbox" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

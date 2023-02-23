@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.testleaf.Test.TC005Window">
+      <class name="org.testleaf.Test.TC007Textbox">
         <methods>
           <include name="closeBrowser"/>
+          <include name="textboxType"/>
           <include name="startBrowser"/>
-          <include name="clickWindowElement"/>
         </methods>
-      </class> <!-- org.testleaf.Test.TC005Window -->
+      </class> <!-- org.testleaf.Test.TC007Textbox -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
